@@ -10,6 +10,7 @@ import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
+import static org.hamcrest.CoreMatchers.hasItem;
 import static org.hamcrest.CoreMatchers.is;
 
 public class FavouritesStepDefintions {
@@ -39,7 +40,7 @@ public class FavouritesStepDefintions {
         actor.should(
                 seeThatResponse("all the votes shoud be returned",
                         response -> response.statusCode(200)
-                                .body("id",is(14065)))
+                                .body("id",hasItem(14065)))
         );
     }
 
