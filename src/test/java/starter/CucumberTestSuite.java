@@ -9,6 +9,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty"},
         features = "classpath:features",
-        tags = "@favs"
+       // tags = "@user-favs"
+      //  tags = "@favs"
+      //  tags ="@emrefavs"
+        tags = "@emrefavsoutline"
+      //  tags = "@favs-list"
+
 )
 public class CucumberTestSuite {}
