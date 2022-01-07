@@ -8,11 +8,11 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         plugin = {"pretty"},
-        features = "classpath:features",
+        features = "classpath:features"
        // tags = "@user-favs"
       //  tags = "@favs"
       //  tags ="@emrefavs"
-        tags = "@emrefavsoutline"
+      //  tags = "@emrefavsoutline"
       //  tags = "@favs-list"
 
 )
